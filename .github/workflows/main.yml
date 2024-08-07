@@ -9,9 +9,9 @@ jobs:
     name: Rate My Open API
     runs-on: ubuntu-latest
     steps:
-        uses: actions/checkout@v4
-        uses: zuplo/rmoa-action@v1
-        with:
-          filepath: './openapi.json'
-          apikey: ${{ secrets.RMOA_API_KEY }}
-        run: rmoa lint 
+      uses: actions/checkout@v4
+      uses: zuplo/rmoa-action@v1
+      with:
+        filepath: './openapi.json'
+        apikey: ${{ secrets.RMOA_API_KEY }}
+      run: rmoa lint 
