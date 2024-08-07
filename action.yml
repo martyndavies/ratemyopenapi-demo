@@ -1,0 +1,6 @@
+steps:
+  - uses: actions/checkout@v4
+  - uses: zuplo/rmoa-action@v1
+    with:
+      filepath: './openapi.json'
+      apikey: ${{ secrets.RMOA_API_KEY }}
