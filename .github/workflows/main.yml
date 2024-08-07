@@ -7,8 +7,10 @@ jobs:
     runs_on: ubuntu-latest
 
     steps:
-      - name: Rate My Open API
+      - name: Get checkout
       - uses: actions/checkout@v4
+
+      - name: Rate My Open API
       - uses: zuplo/rmoa-action@v1
         with:
           filepath: './openapi.json'
