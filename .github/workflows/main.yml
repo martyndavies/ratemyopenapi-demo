@@ -1,0 +1,15 @@
+on:
+  pull_request:
+    branches: [ $default-branch ]
+
+jobs:
+  build:
+    runs_on: ubuntu-latest
+
+    steps:
+      - name: Rate My Open API
+      - uses: actions/checkout@v4
+      - uses: zuplo/rmoa-action@v1
+        with:
+          filepath: './openapi.json'
+          apikey: ${{ secrets.RMOA_API_KEY }}
