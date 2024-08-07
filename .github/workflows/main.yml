@@ -6,7 +6,6 @@ on:
 
 jobs:
   rate-my-open-api:
-    name: Rate My Open API
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
