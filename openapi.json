@@ -5,6 +5,11 @@
     "version": "1.0.0",
     "description": "API for managing shopping lists."
   },
+  "servers": [
+    {
+      "url": "https://api.example.com"
+    }
+  ],
   "paths": {
     "/lists": {
       "get": {
@@ -17,7 +22,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$re": "#/components/schemas/List"
+                    "$ref": "#/components/schemas/List"
                   }
                 },
                 "example": [
