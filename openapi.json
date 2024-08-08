@@ -5,6 +5,11 @@
     "version": "1.0.0",
     "description": "API for managing shopping lists."
   },
+  "servers": [
+    {
+      "url": "https://api.myshoppinglistsareamazing.com"
+    }
+  ],
   "paths": {
     "/lists": {
       "get": {
